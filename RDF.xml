@@ -1,0 +1,98 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:ex="http://example.org/">
+
+    <!-- Латунь – це сплав міді та цинку -->
+    <ex:Alloy rdf:about="http://example.org/Brass">
+        <rdf:type rdf:resource="http://example.org/Alloy"/>
+        <ex:madeOf rdf:resource="http://example.org/Copper"/>
+        <ex:madeOf rdf:resource="http://example.org/Zinc"/>
+    </ex:Alloy>
+
+    <!-- SPIEGEL — німецький інформаційний журнал зі штаб-квартирою в Гамбурзі -->
+    <ex:City rdf:about="http://example.org/Hamburg">
+        <rdf:type rdf:resource="http://example.org/City"/>
+        <ex:locatedIn rdf:resource="http://example.org/Germany"/>
+    </ex:City>
+
+    <ex:Magazine rdf:about="http://example.org/SPIEGEL">
+        <rdf:type rdf:resource="http://example.org/Magazine"/>
+        <ex:locatedIn rdf:resource="http://example.org/Hamburg"/>
+    </ex:Magazine>
+
+    <!-- Есе складається зі вступу, основної частини та висновку -->
+    <ex:Text rdf:about="http://example.org/Essay">
+        <rdf:type rdf:resource="http://example.org/Text"/>
+        <ex:consistsOf rdf:resource="http://example.org/Introduction"/>
+        <ex:consistsOf rdf:resource="http://example.org/MainPart"/>
+        <ex:consistsOf rdf:resource="http://example.org/Conclusion"/>
+    </ex:Text>
+
+    <!-- Павло знає, що Олена живе в Полтаві -->
+    <ex:Person rdf:about="http://example.org/Olena">
+        <rdf:type rdf:resource="http://example.org/Person"/>
+        <ex:livesIn rdf:resource="http://example.org/Poltava"/>
+    </ex:Person>
+
+    <ex:Fact rdf:about="http://example.org/OlenaLivingInPoltava">
+        <rdf:type rdf:resource="http://example.org/Fact"/>
+        <ex:about rdf:resource="http://example.org/Olena"/>
+    </ex:Fact>
+
+    <ex:Person rdf:about="http://example.org/Pavlo">
+        <rdf:type rdf:resource="http://example.org/Person"/>
+        <ex:knows rdf:resource="http://example.org/OlenaLivingInPoltava"/>
+    </ex:Person>
+
+    <!-- Олена каже, що її друг живе в Києві -->
+    <ex:Person rdf:about="http://example.org/OlenaFriend">
+        <rdf:type rdf:resource="http://example.org/Person"/>
+        <ex:livesIn rdf:resource="http://example.org/Kyiv"/>
+    </ex:Person>
+
+    <ex:Fact rdf:about="http://example.org/OlenaFriendLivingInKyiv">
+        <rdf:type rdf:resource="http://example.org/Fact"/>
+        <ex:about rdf:resource="http://example.org/OlenaFriend"/>
+    </ex:Fact>
+
+    <ex:Person rdf:about="http://example.org/Olena">
+        <rdf:type rdf:resource="http://example.org/Person"/>
+        <ex:says rdf:resource="http://example.org/OlenaFriendLivingInKyiv"/>
+    </ex:Person>
+
+    <!-- Стефан думає, що Анна знає, що він знає її батька -->
+    <ex:Person rdf:about="http://example.org/Stefan">
+        <rdf:type rdf:resource="http://example.org/Person"/>
+        <ex:knows rdf:resource="http://example.org/AnnaFather"/>
+    </ex:Person>
+
+    <ex:Fact rdf:about="http://example.org/StefanKnowsAnnaFather">
+        <rdf:type rdf:resource="http://example.org/Fact"/>
+        <ex:about rdf:resource="http://example.org/Stefan"/>
+    </ex:Fact>
+
+    <ex:Person rdf:about="http://example.org/Anna">
+        <rdf:type rdf:resource="http://example.org/Person"/>
+        <ex:knows rdf:resource="http://example.org/StefanKnowsAnnaFather"/>
+    </ex:Person>
+
+    <ex:Person rdf:about="http://example.org/Stefan">
+        <rdf:type rdf:resource="http://example.org/Person"/>
+        <ex:thinks rdf:resource="http://example.org/StefanKnowsAnnaFather"/>
+    </ex:Person>
+
+    <!-- Іван знає, що Рим є столицею Італії -->
+    <ex:City rdf:about="http://example.org/Rome">
+        <rdf:type rdf:resource="http://example.org/City"/>
+        <ex:capitalOf rdf:resource="http://example.org/Italy"/>
+    </ex:City>
+
+    <ex:Fact rdf:about="http://example.org/RomeIsCapitalOfItaly">
+        <rdf:type rdf:resource="http://example.org/Fact"/>
+        <ex:about rdf:resource="http://example.org/Rome"/>
+    </ex:Fact>
+
+    <ex:Person rdf:about="http://example.org/Ivan">
+        <rdf:type rdf:resource="http://example.org/Person"/>
+        <ex:knows rdf:resource="http://example.org/RomeIsCapitalOfItaly"/>
+    </ex:Person>
+</rdf:RDF>
