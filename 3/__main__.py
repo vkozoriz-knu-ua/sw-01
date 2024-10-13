@@ -97,14 +97,14 @@ graph.set((emma, FOAF.age, Literal(36, datatype=XSD.integer)))
 serialize_graph(graph, "new_graph.ttl", format_="turtle")
 visualize_graph(graph, "new_graph.png")
 
-print("Виведіть на консоль усі трійки графу")
+print("Виведіть на консоль усі трійки графу:")
 for s, p, o in graph:
     print(s, p, o)
 
-print("\nВиведіть на консоль трійки, що стосуються лише про Емму")
+print("\nВиведіть на консоль трійки, що стосуються лише про Емму:")
 for s, p, o in graph.triples((emma, None, None)):
     print(s, p, o)
 
-print("\nВиведіть на консоль трійки, що містять імена людей")
+print("\nВиведіть на консоль трійки, що містять імена людей:")
 for s, p, o in graph.triples((None, SDO.givenName, None)):
     print(s, p, o)
