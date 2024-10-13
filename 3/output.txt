@@ -1,4 +1,4 @@
-Виведіть на консоль усі трійки графу
+Виведіть на консоль усі трійки графу:
 http://example.org/Emma http://xmlns.com/foaf/0.1/interest Cycling
 http://example.org/MeetingInParisIn2014 https://schema.org/attendee http://example.org/Emma
 http://example.org/Emma http://xmlns.com/foaf/0.1/topic_interest Waste management
@@ -50,7 +50,7 @@ http://example.org/Cade https://schema.org/addressLocality Berkeley
 http://example.org/MeetingInParisIn2014 https://schema.org/startDate 2014-08-01
 http://example.org/Cade http://xmlns.com/foaf/0.1/interest Photography
 
-Виведіть на консоль трійки, що стосуються лише про Емму
+Виведіть на консоль трійки, що стосуються лише про Емму:
 http://example.org/Emma http://www.w3.org/1999/02/22-rdf-syntax-ns#type https://schema.org/Person
 http://example.org/Emma https://schema.org/givenName Emma
 http://example.org/Emma https://schema.org/streetAddress Carrer de la Guardia Civil 20
@@ -75,6 +75,6 @@ http://example.org/Emma http://example.org/visited Sweden
 http://example.org/Emma http://xmlns.com/foaf/0.1/knows http://example.org/Cade
 http://example.org/Emma http://xmlns.com/foaf/0.1/age 36
 
-Виведіть на консоль трійки, що містять імена людей
+Виведіть на консоль трійки, що містять імена людей:
 http://example.org/Cade https://schema.org/givenName Cade
 http://example.org/Emma https://schema.org/givenName Emma
