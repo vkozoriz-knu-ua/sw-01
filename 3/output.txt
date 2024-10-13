@@ -1,0 +1,80 @@
+Виведіть на консоль усі трійки графу
+http://example.org/Emma http://xmlns.com/foaf/0.1/interest Cycling
+http://example.org/MeetingInParisIn2014 https://schema.org/attendee http://example.org/Emma
+http://example.org/Emma http://xmlns.com/foaf/0.1/topic_interest Waste management
+http://example.org/Paris https://schema.org/addressCountry http://example.org/France
+http://example.org/Cade http://xmlns.com/foaf/0.1/interest Ecology
+http://example.org/Emma http://www.w3.org/1999/02/22-rdf-syntax-ns#type https://schema.org/Person
+http://example.org/Emma http://xmlns.com/foaf/0.1/age 36
+http://example.org/Emma https://schema.org/givenName Emma
+http://example.org/Cade https://schema.org/addressRegion California
+http://example.org/MeetingInParisIn2014 https://schema.org/endDate 2014-08-01
+http://example.org/Emma http://example.org/visited Germany
+http://example.org/Cade http://www.w3.org/1999/02/22-rdf-syntax-ns#type https://schema.org/Person
+http://example.org/MeetingInParisIn2014 http://www.w3.org/1999/02/22-rdf-syntax-ns#type https://schema.org/event
+http://example.org/Emma http://xmlns.com/foaf/0.1/knows http://example.org/Cade
+http://example.org/Cade http://example.org/degreeEarned 2011
+http://example.org/Cade http://example.org/visited Germany
+http://example.org/Emma http://example.org/visited Sweden
+http://example.org/MeetingInParisIn2014 https://schema.org/attendee http://example.org/Cade
+http://example.org/Emma http://example.org/degree Master of Chemistry
+http://example.org/Emma http://xmlns.com/foaf/0.1/topic_interest Air pollution
+http://example.org/Cade https://schema.org/addressCountry USA
+http://example.org/Cade http://xmlns.com/foaf/0.1/interest Birds
+http://example.org/Emma https://schema.org/studyLocation University of Valencia
+http://example.org/Emma https://schema.org/streetAddress Carrer de la Guardia Civil 20
+http://example.org/Emma http://example.org/degreeEarned 2015
+http://example.org/Emma http://example.org/visited http://example.org/France
+http://example.org/Cade http://xmlns.com/foaf/0.1/interest Environment
+http://example.org/Emma https://schema.org/postalCode 46020
+http://example.org/Cade http://xmlns.com/foaf/0.1/interest Travel
+http://example.org/Emma http://example.org/visited Italy
+http://example.org/MeetingInParisIn2014 https://schema.org/location http://example.org/Paris
+http://example.org/Emma https://schema.org/addressLocality Valencia
+http://example.org/Cade http://example.org/degree Bachelor of Biology
+http://example.org/Cade http://example.org/visited http://example.org/France
+http://example.org/Emma http://example.org/visited Portugal
+http://example.org/Emma http://xmlns.com/foaf/0.1/interest Travel
+http://example.org/Emma https://schema.org/addressCountry Spain
+http://example.org/Cade http://example.org/visited Canada
+http://example.org/Cade https://schema.org/givenName Cade
+http://example.org/Emma http://example.org/visited Denmark
+http://example.org/Emma http://xmlns.com/foaf/0.1/interest Music
+http://example.org/Cade http://xmlns.com/foaf/0.1/knows http://example.org/Emma
+http://example.org/Cade https://schema.org/streetAddress 1516 Henry Street
+http://example.org/Cade https://schema.org/studyLocation University of California, Berkeley
+http://example.org/Emma http://xmlns.com/foaf/0.1/topic_interest Toxic waste
+http://example.org/MeetingInParisIn2014 https://schema.org/name Meeting in Paris in 2004
+http://example.org/Cade https://schema.org/postalCode 94709
+http://example.org/Cade https://schema.org/addressLocality Berkeley
+http://example.org/MeetingInParisIn2014 https://schema.org/startDate 2014-08-01
+http://example.org/Cade http://xmlns.com/foaf/0.1/interest Photography
+
+Виведіть на консоль трійки, що стосуються лише про Емму
+http://example.org/Emma http://www.w3.org/1999/02/22-rdf-syntax-ns#type https://schema.org/Person
+http://example.org/Emma https://schema.org/givenName Emma
+http://example.org/Emma https://schema.org/streetAddress Carrer de la Guardia Civil 20
+http://example.org/Emma https://schema.org/postalCode 46020
+http://example.org/Emma https://schema.org/addressLocality Valencia
+http://example.org/Emma https://schema.org/addressCountry Spain
+http://example.org/Emma http://example.org/degree Master of Chemistry
+http://example.org/Emma https://schema.org/studyLocation University of Valencia
+http://example.org/Emma http://example.org/degreeEarned 2015
+http://example.org/Emma http://xmlns.com/foaf/0.1/topic_interest Waste management
+http://example.org/Emma http://xmlns.com/foaf/0.1/topic_interest Toxic waste
+http://example.org/Emma http://xmlns.com/foaf/0.1/topic_interest Air pollution
+http://example.org/Emma http://xmlns.com/foaf/0.1/interest Cycling
+http://example.org/Emma http://xmlns.com/foaf/0.1/interest Music
+http://example.org/Emma http://xmlns.com/foaf/0.1/interest Travel
+http://example.org/Emma http://example.org/visited Portugal
+http://example.org/Emma http://example.org/visited Italy
+http://example.org/Emma http://example.org/visited http://example.org/France
+http://example.org/Emma http://example.org/visited Germany
+http://example.org/Emma http://example.org/visited Denmark
+http://example.org/Emma http://example.org/visited Sweden
+http://example.org/Emma http://xmlns.com/foaf/0.1/knows http://example.org/Cade
+http://example.org/Emma http://xmlns.com/foaf/0.1/age 36
+
+Виведіть на консоль трійки, що містять імена людей
+http://example.org/Cade https://schema.org/givenName Cade
+http://example.org/Emma https://schema.org/givenName Emma

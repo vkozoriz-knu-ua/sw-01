@@ -1,0 +1,59 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://example.org/> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:MeetingInParisIn2014 a schema:event ;
+    schema:attendee ns1:Cade,
+        ns1:Emma ;
+    schema:endDate "2014-08-01"^^xsd:date ;
+    schema:location ns1:Paris ;
+    schema:name "Meeting in Paris in 2004"@en ;
+    schema:startDate "2014-08-01"^^xsd:date .
+
+ns1:Paris schema:addressCountry ns1:France .
+
+ns1:Cade a schema:Person ;
+    ns1:degree "Bachelor of Biology"@en ;
+    ns1:degreeEarned "2011"^^xsd:date ;
+    ns1:visited ns1:France,
+        "Canada"@en,
+        "Germany"@en ;
+    foaf:interest "Birds"@en,
+        "Ecology"@en,
+        "Environment"@en,
+        "Photography"@en,
+        "Travel"@en ;
+    foaf:knows ns1:Emma ;
+    schema:addressCountry "USA"@en ;
+    schema:addressLocality "Berkeley"@en ;
+    schema:addressRegion "California"@en ;
+    schema:givenName "Cade"@en ;
+    schema:postalCode "94709"@en ;
+    schema:streetAddress "1516 Henry Street"@en ;
+    schema:studyLocation "University of California, Berkeley"@en .
+
+ns1:Emma a schema:Person ;
+    ns1:degree "Master of Chemistry"@en ;
+    ns1:degreeEarned "2015"^^xsd:year ;
+    ns1:visited ns1:France,
+        "Denmark"@en,
+        "Germany"@en,
+        "Italy"@en,
+        "Portugal"@en,
+        "Sweden"@en ;
+    foaf:age 36 ;
+    foaf:interest "Cycling"@en,
+        "Music"@en,
+        "Travel"@en ;
+    foaf:knows ns1:Cade ;
+    foaf:topic_interest "Air pollution"@en,
+        "Toxic waste"@en,
+        "Waste management"@en ;
+    schema:addressCountry "Spain"@en ;
+    schema:addressLocality "Valencia"@en ;
+    schema:givenName "Emma"@en ;
+    schema:postalCode "46020"@en ;
+    schema:streetAddress "Carrer de la Guardia Civil 20"@es ;
+    schema:studyLocation "University of Valencia"@en .
+
