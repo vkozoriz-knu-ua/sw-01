@@ -81,7 +81,7 @@ graph.add((emma, FOAF.knows, cade))
 
 meeting = ex["MeetingInParisIn2014"]
 graph.add((meeting, RDF.type, SDO.event))
-graph.add((meeting, SDO.name, Literal("Meeting in Paris in 2004", lang="en")))
+graph.add((meeting, SDO.name, Literal("Meeting in Paris in 2014", lang="en")))
 graph.add((meeting, SDO.location, paris))
 graph.add((meeting, SDO.startDate, Literal("2014-08", datatype=XSD.date)))
 graph.add((meeting, SDO.endDate, Literal("2014-08", datatype=XSD.date)))
