@@ -44,7 +44,7 @@ http://example.org/Cade http://xmlns.com/foaf/0.1/knows http://example.org/Emma
 http://example.org/Cade https://schema.org/streetAddress 1516 Henry Street
 http://example.org/Cade https://schema.org/studyLocation University of California, Berkeley
 http://example.org/Emma http://xmlns.com/foaf/0.1/topic_interest Toxic waste
-http://example.org/MeetingInParisIn2014 https://schema.org/name Meeting in Paris in 2004
+http://example.org/MeetingInParisIn2014 https://schema.org/name Meeting in Paris in 2014
 http://example.org/Cade https://schema.org/postalCode 94709
 http://example.org/Cade https://schema.org/addressLocality Berkeley
 http://example.org/MeetingInParisIn2014 https://schema.org/startDate 2014-08-01
